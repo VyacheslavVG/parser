@@ -1,6 +1,6 @@
 import tkinter as tk
 from pprint import pprint
-from parserrr import start_the_parser
+from parserrr import start_the_parser , start_the_parser_habr
 import os
 import sys
 
@@ -29,7 +29,7 @@ def handle_click_btn_2(event):
 btn_2.bind("<Button-1>", handle_click_btn_2)
 
 def handle_click_btn_1(event):
-    return start_the_parser()
+    return start_the_parser() , start_the_parser_habr()
 btn_1.bind("<Button-1>", handle_click_btn_1)
 
 btn_1.pack()
