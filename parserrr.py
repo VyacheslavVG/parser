@@ -27,7 +27,7 @@ def start_the_parser():
 
     for i in range(1,5,1) :
         # ЭТОТ КОД НЕОБХОДИМ ДЛЯ СКАЧКИ HTML ДОКУМЕНТА СТРАНИИЦЫ , ЧТОБЫ НЕ ДОЛБИТЬ САЙТ
-        url = 'https://freelance.ru/project/search/pro?c=&q=python%2Cпарсер%2Cбот&m=or&e=&f=&t=&o=1https%3A%2F%2Fwww.fl.ru%2Fprojects&page='+str(i)+'&per-page=25'
+        url = 'https://freelance.ru/project/search/pro?c=&q=python&m=or&e=&f=&t=&o=1&page='+str(i)+'&per-page=25'
         r =requests.get(url)
         src = r.text
 
